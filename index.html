@@ -66,7 +66,7 @@
                 const unitConversionKgToG = basaltPerVol * 1000;
                 const concentrationBasalt = unitConversionKgToG / effectivePorosity;
 
-                $('#airBlindPores').text(airBlindPores.toFixed(2)*10 + '%');
+                $('#airBlindPores').text((airBlindPores*100).toFixed(2) + '%');
                 $('#volumeSoil').text(volumeSoil.toFixed(2) +'  m³');
                 $('#litersPoreWater').text(litersPoreWater.toFixed(2) + ' L');
                 $('#basaltPerVol').text(basaltPerVol.toFixed(2) + ' kg/m³');
