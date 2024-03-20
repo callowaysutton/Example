@@ -321,7 +321,6 @@
         console.log(mineral, (Math.pow(weight/density*basaltDensity, 2/3)*SSA), weight, density, basaltDensity, SSA, totalSSA)
         const row = `<tr class="border-b border-neutral-200 dark:border-white/10">
           <td class="whitespace-nowrap px-6 py-4">${mineral}</td>
-          <td class="whitespace-nowrap px-6 py-4">${weight.toFixed(4)}%</td>
           <td class="whitespace-nowrap px-6 py-4">${((weight/minerals[mineral]['weight'])*parseFloat($('#concentrationBasalt').text())).toFixed(4)}</td>
           <td class="whitespace-nowrap px-6 py-4">${(((Math.pow(weight/density*basaltDensity, 2/3)*SSA)/rockSSA)*totalSSA).toFixed(4)}</td>
         </tr>`;
